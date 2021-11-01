@@ -1,7 +1,7 @@
 import random
 def rps():
     user = input ( "enter your action :" )  # Asking user to enter their choice
-    action = [ 'r,''p' , 's' ]
+    action = ['r','p','s']
     computer = random.choice ( action )  # system selecting choice randomly
     print ( "computer's choice:" , computer )  # printing system's random choice
 
