@@ -1,0 +1,12 @@
+def main():
+    n=int(input())
+    for i in range(0, n):
+        for j in range(0, i+1):
+            if (i==j):
+                print(chr(i+65))
+            else:
+                print(chr(i+65),end=" ")
+    return 0
+
+if __name__ == '__main__':
+    main()
