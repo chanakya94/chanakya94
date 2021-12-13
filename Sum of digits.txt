@@ -1,0 +1,16 @@
+def main():
+    tc=int(input())
+    while tc>0:
+        tc = tc - 1
+        n=int(input())
+        sum=0
+        while (n!=0):
+            dig=n%10
+            n=n//10
+            sum=sum+dig
+        print(sum)
+
+    return 0
+
+if __name__ == '__main__':
+    main()
