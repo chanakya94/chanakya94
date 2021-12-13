@@ -1,0 +1,23 @@
+def main():
+    A=float(input())
+    import math
+    if A<=50:
+        B=A*0.50
+        percent=B*0.20
+        print(math.floor(B+percent))
+    elif A>50 and A<=150:
+        C=((50*0.50)+(A-50)*0.75)
+        percent=C*0.20
+        print(math.floor(C+percent))
+    elif A>=150 and A<=250:
+        C=((50*0.50)+(100*0.75)+(A-150)*1.20)
+        percent=C*0.20
+        print(math.floor(C+percent))
+    else:
+        C=((50*0.50)+(100*0.75)+(100*1.20)+(A-250)*1.50)
+        percent=C*0.20
+        print(math.floor(C+percent))
+    return 0
+
+if __name__ == '__main__':
+    main()
