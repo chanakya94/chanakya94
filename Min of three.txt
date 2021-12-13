@@ -1,0 +1,8 @@
+def main():
+    x, y, z = [int(x) for x in input().split()]
+    print(min(x,y,z))
+
+    return 0
+
+if __name__ == '__main__':
+    main()
