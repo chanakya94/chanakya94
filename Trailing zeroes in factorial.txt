@@ -1,0 +1,15 @@
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def trailingZeroes(self, A):
+        ans = 0
+
+        i = 1
+        x = 5 ** i
+
+        while A / x >= 1:
+            x = 5 ** i
+            ans += A // x
+            i += 1
+
+        return ans
